@@ -1,0 +1,111 @@
+.widgetsm {
+  padding: 20px;
+  margin-right: 20px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+
+.widgetsm .widgetTitle {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.widgetsm .widgetlist {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.widgetsm .widgetlist .widgetitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.widgetsm .widgetlist .widgetitem .profileitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.widgetsm .widgetlist .widgetitem .profileitem img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.widgetsm .widgetlist .widgetitem .profileitem .userDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+.widgetsm .widgetlist .widgetitem .profileitem .userDetails .userName {
+  font-weight: 600;
+}
+
+.widgetsm .widgetlist .widgetitem .profileitem .userDetails .userTitle {
+  font-weight: 300;
+}
+
+.widgetsm .widgetlist .widgetitem .widgetsmBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+  background-color: #eeeef7;
+  color: #555;
+  cursor: pointer;
+}
+
+.widgetsm .widgetlist .widgetitem .widgetsmBtn .icon {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+@media (max-width: 1193px) {
+  .widgetsm {
+    margin-right: 0px !important;
+    margin-bottom: 20px;
+  }
+  .widgetsm .userDetails {
+    margin-left: 10px !important;
+  }
+  .widgetsm .userDetails .userName {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .widgetsm .userDetails .userTitle {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .widgetsm .widgetsmBtn {
+    padding: 5px !important;
+  }
+}
+/*# sourceMappingURL=WidgetSm.css.map */

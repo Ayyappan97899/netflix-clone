@@ -1,0 +1,296 @@
+.editUser {
+  position: absolute;
+  top: 75px;
+  left: 220px;
+  width: calc(100vw - 237px) !important;
+}
+
+.editUser .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.editUser .titleContainer .title {
+  font-size: 25px;
+}
+
+.editUser .titleContainer .userAddBtn {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: teal;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.editUser .userContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-top: 20px;
+}
+
+.editUser .userContainer .userShow {
+  margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.editUser .userContainer .userShow .userShowTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.editUser .userContainer .userShow .userShowTop img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.editUser .userContainer .userShow .userShowTop .userShowTopDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+.editUser .userContainer .userShow .userShowTop .userShowTopDetails .userShowTopName {
+  font-weight: 600;
+}
+
+.editUser .userContainer .userShow .userShowTop .userShowTopDetails .userShowTopTitle {
+  font-weight: 300;
+}
+
+.editUser .userContainer .userShow .userShowBottom {
+  margin-top: 20px;
+}
+
+.editUser .userContainer .userShow .userShowBottom .userShowBottomTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #afaaaa;
+}
+
+.editUser .userContainer .userShow .userShowBottom .userShowInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+  color: #444;
+}
+
+.editUser .userContainer .userShow .userShowBottom .userShowInfo .icon {
+  font-size: 16px;
+}
+
+.editUser .userContainer .userShow .userShowBottom .userShowInfo .userShowBottomDetails {
+  margin-left: 10px;
+}
+
+.editUser .userContainer .userUpdate {
+  margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.editUser .userContainer .userUpdate .userUpdateTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.editUser .userContainer .userUpdate .userUpdateForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.editUser .userContainer .userUpdate .userUpdateLeft .userUpdateItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+}
+
+.editUser .userContainer .userUpdate .userUpdateLeft .userUpdateItem label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.editUser .userContainer .userUpdate .userUpdateLeft .userUpdateItem input {
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+  outline: none;
+}
+
+.editUser .userContainer .userUpdate .userUpdateLeft .userUpdateItem .is-invalid-label {
+  color: red;
+}
+
+.editUser .userContainer .userUpdate .userUpdateLeft .userUpdateItem .is-invalid {
+  border-bottom: 1px solid red;
+}
+
+.editUser .userContainer .userUpdate .userUpdateRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.editUser .userContainer .userUpdate .userUpdateRight .userUpdateUpload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.editUser .userContainer .userUpdate .userUpdateRight .userUpdateUpload img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.editUser .userContainer .userUpdate .userUpdateRight .userUpdateUpload .icon {
+  cursor: pointer;
+}
+
+.editUser .userContainer .userUpdate .userUpdateRight .userUpdateUpload .is-invalid-label {
+  color: red;
+}
+
+.editUser .userContainer .userUpdate .userUpdateRight .userUpdateBtn {
+  border: none;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: white;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .editUser {
+    left: 63px;
+    width: calc(100vw - 80px) !important;
+  }
+}
+
+@media (max-width: 590px) {
+  .editUser .userUpdateUpload img {
+    width: 80px !important;
+    height: 80px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 10px !important;
+  }
+  .editUser .userUpdateItem input {
+    width: 220px !important;
+  }
+}
+
+@media (max-width: 517px) {
+  .editUser .userUpdateUpload img {
+    width: 60px !important;
+    height: 60px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50% !important;
+  }
+  .editUser .userUpdateItem input {
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .editUser .userUpdateUpload img {
+    width: 45px !important;
+    height: 45px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50% !important;
+  }
+  .editUser .userUpdateItem input {
+    width: 137px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .editUser .userUpdateItem input {
+    width: 110px !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .editUser {
+    position: absolute;
+    top: 75px;
+    left: 220px;
+    width: calc(100vw - 220px) !important;
+  }
+  .editUser .titleContainer .title {
+    font-size: 32px;
+  }
+  .editUser .userContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
+  .editUser .userUpdate {
+    margin-left: 20px;
+  }
+  .editUser .userShow {
+    margin-bottom: 0px !important;
+  }
+  .editUser .userUpdate {
+    margin-bottom: 0px !important;
+  }
+}
+/*# sourceMappingURL=User.css.map */

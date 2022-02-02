@@ -1,0 +1,148 @@
+.sidebarlist {
+  position: fixed;
+  width: 200px;
+  top: 55px;
+  padding: 0px 20px 20px 20px;
+  height: calc(100vh - 65px);
+  background-color: #fbfbff;
+  color: #555;
+  overflow-y: auto;
+}
+
+.sidebarlist::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebarlist::-webkit-scrollbar-track {
+  background-color: rgba(20, 71, 122, 0.06);
+}
+
+.sidebarlist::-webkit-scrollbar-thumb {
+  width: 10px;
+  height: 20px;
+  background-color: rgba(25, 118, 210, 0.1);
+}
+
+.sidebarlist .sidebarmenu {
+  margin-bottom: 10px;
+}
+
+.sidebarlist .sidebarmenu .dashtitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #bbbaba;
+  margin-top: 20px;
+}
+
+.sidebarlist .sidebarmenu .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #bbbaba;
+}
+
+.sidebarlist .sidebarmenu .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebarlist .sidebarmenu .list .listItem {
+  width: 100%;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.sidebarlist .sidebarmenu .list .listItem .listIcon {
+  margin-left: 5px;
+}
+
+.sidebarlist .sidebarmenu .list .listItem .listIcon .icon {
+  font-size: 20px;
+}
+
+.sidebarlist .sidebarmenu .list .listItem .listText {
+  margin-left: -25px;
+}
+
+@media (max-width: 1980px) {
+  .sidebarlist {
+    padding: 0px 10px 10px 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidebarlist .dashtitle,
+  .sidebarlist .title {
+    font-size: 13px !important;
+  }
+  .sidebarlist .icon {
+    font-size: 19px !important;
+  }
+  .sidebarlist .css-10hburv-MuiTypography-root {
+    font-size: 14px;
+  }
+  .sidebarlist .listText {
+    margin-left: -30px !important;
+  }
+}
+
+@media (max-width: 903px) {
+  .sidebarlist .dashtitle,
+  .sidebarlist .title {
+    font-size: 13px !important;
+  }
+  .sidebarlist .icon {
+    font-size: 19px !important;
+  }
+  .sidebarlist .css-10hburv-MuiTypography-root {
+    font-size: 14px;
+  }
+  .sidebarlist .listText {
+    margin-left: -33px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebarlist {
+    position: fixed;
+    top: 55px;
+    width: 43px;
+    padding: 10px;
+    height: 100vh;
+  }
+  .sidebarlist .sidebarmenu {
+    margin-bottom: 0px !important;
+  }
+  .sidebarlist .sidebarmenu .dashtitle,
+  .sidebarlist .sidebarmenu .title {
+    display: none;
+  }
+  .sidebarlist .sidebarmenu .css-h4y409-MuiList-root {
+    padding: 0px;
+  }
+  .sidebarlist .sidebarmenu .listItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px !important;
+  }
+  .sidebarlist .sidebarmenu .listItem .listIcon {
+    margin: 0px !important;
+    min-width: 23px !important;
+    height: 23px !important;
+  }
+  .sidebarlist .sidebarmenu .listItem .listIcon .icon {
+    font-size: 23px !important;
+  }
+  .sidebarlist .sidebarmenu .listItem .listText {
+    display: none;
+  }
+}
+/*# sourceMappingURL=SideBar.css.map */

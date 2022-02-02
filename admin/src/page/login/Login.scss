@@ -1,0 +1,46 @@
+.login {
+  width: 300px;
+  margin: 200px auto;
+  padding: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  .logo {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .loginform {
+    display: flex;
+    flex-direction: column;
+    input {
+      margin-bottom: 15px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid lightslategray;
+      outline: none;
+    }
+    .is-invalid {
+      border: 1px solid red;
+    }
+    .errormsg {
+      color: red;
+      text-align: center;
+      margin: 10px 0px;
+    }
+    button {
+      background-color: darkblue;
+      color: white;
+      border: none;
+      padding: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .login {
+    width: 250px;
+  }
+}

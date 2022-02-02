@@ -1,0 +1,50 @@
+.list {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.list .listTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+.list .wrapper {
+  position: relative;
+}
+
+.list .wrapper .sliderArrow {
+  width: 50px;
+  height: 100%;
+  background-color: rgba(22, 22, 22, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  margin: auto;
+  cursor: pointer;
+}
+
+.list .wrapper .sliderArrow.left {
+  left: 0;
+}
+
+.list .wrapper .sliderArrow.right {
+  right: 0;
+}
+
+.list .wrapper .container {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50px;
+  margin-top: 10px;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/*# sourceMappingURL=List.css.map */

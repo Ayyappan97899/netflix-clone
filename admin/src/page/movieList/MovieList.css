@@ -1,0 +1,197 @@
+.movielist {
+  position: absolute;
+  top: 75px;
+  left: 65px;
+  width: calc(100vw - 82px) !important;
+}
+
+.movielist .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.movielist .titleContainer .title {
+  font-size: 22px;
+}
+
+.movielist .titleContainer .addBtn {
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: teal;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.movielist .productTop .right {
+  margin: 24px 0px;
+  padding: 20px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.movielist .productTop .right .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movielist .productTop .right .top img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.movielist .productTop .right .top .productName {
+  font-weight: 600;
+}
+
+.movielist .productTop .right .bottom {
+  margin-top: 10px;
+}
+
+.movielist .productTop .right .bottom .item {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.movielist .productTop .right .bottom .item .key {
+  margin-right: 20px;
+}
+
+.movielist .productTop .right .bottom .item .value {
+  font-weight: 300;
+}
+
+.movielist .productBottom {
+  margin-bottom: 24px;
+  padding: 20px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.movielist .productBottom .productForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.movielist .productBottom .productForm .formleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.movielist .productBottom .productForm .formleft label {
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.movielist .productBottom .productForm .formleft input {
+  width: 295px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+.movielist .productBottom .productForm .formleft select {
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+.movielist .productBottom .productForm .formleft .is-invalid-label {
+  color: red;
+}
+
+.movielist .productBottom .productForm .formleft .is-invalid {
+  border: none;
+  border-bottom: 1px solid red;
+  outline: none;
+}
+
+.movielist .productBottom .productForm .formleft select {
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.movielist .productBottom .productForm .updateBtn {
+  width: 305px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1120px) {
+  .movielist {
+    position: absolute !important;
+    top: 75px;
+    left: 220px !important;
+    width: calc(100vw - 220px) !important;
+  }
+}
+
+@media (max-width: 902px) {
+  .movielist {
+    position: absolute !important;
+    top: 75px;
+    left: 65px !important;
+    width: calc(100vw - 66px) !important;
+  }
+}
+
+@media (max-width: 444px) {
+  .movielist input {
+    width: 210px !important;
+  }
+  .movielist .updateBtn {
+    width: 221px !important;
+  }
+}
+
+@media (min-width: 1120px) {
+  .movielist {
+    position: absolute;
+    top: 75px;
+    left: 220px;
+    width: calc(100vw - 220px) !important;
+  }
+  .movielist .title {
+    font-size: 32px !important;
+  }
+}
+/*# sourceMappingURL=MovieList.css.map */

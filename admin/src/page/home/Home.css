@@ -1,0 +1,30 @@
+.home {
+  position: absolute;
+  top: 55px;
+  left: 65px;
+  width: calc(100vw - 82px) !important;
+}
+
+.home .homeWidget {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+@media (min-width: 901px) {
+  .home {
+    left: 220px;
+    width: calc(100vw - 240px) !important;
+  }
+}
+
+@media (max-width: 1193px) {
+  .home .homeWidget {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

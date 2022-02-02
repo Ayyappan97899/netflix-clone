@@ -1,0 +1,51 @@
+.movielists {
+  position: absolute;
+  top: 75px;
+  left: 65px;
+  width: calc(100vw - 65px) !important;
+  height: 87%;
+}
+
+.movielists .productname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movielists .productname img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.movielists .editBtn {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #3bb077;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.movielists .deleteBtn {
+  color: red;
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .movielists {
+    position: absolute;
+    top: 75px;
+    left: 220px;
+    width: calc(100vw - 220px) !important;
+    height: 85%;
+  }
+}
+/*# sourceMappingURL=MovieLists.css.map */

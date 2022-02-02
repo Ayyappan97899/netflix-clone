@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.Link {
+  text-decoration: none;
+  color: inherit;
+  /* display: flex;
+  align-items: center; */
+}
+
+.grid {
+  width: 200px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    width: 63px;
+  }
+}

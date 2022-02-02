@@ -1,0 +1,26 @@
+.home {
+  position: absolute;
+  top: 55px;
+  left: 65px;
+  width: calc(100vw - 82px) !important;
+  .homeWidget {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (min-width: 901px) {
+  .home {
+    left: 220px;
+    width: calc(100vw - 240px) !important;
+  }
+}
+
+@media (max-width: 1193px) {
+  .home {
+    .homeWidget {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}

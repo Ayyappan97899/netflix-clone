@@ -1,0 +1,59 @@
+.login {
+  width: 300px;
+  margin: 200px auto;
+  padding: 30px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+
+.login .logo {
+  color: darkblue;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login .loginform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login .loginform input {
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid lightslategray;
+  outline: none;
+}
+
+.login .loginform .is-invalid {
+  border: 1px solid red;
+}
+
+.login .loginform .errormsg {
+  color: red;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.login .loginform button {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 420px) {
+  .login {
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=Login.css.map */

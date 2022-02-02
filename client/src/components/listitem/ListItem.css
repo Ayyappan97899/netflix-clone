@@ -1,0 +1,100 @@
+.list-item {
+  width: 225px;
+  height: 120px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  background-color: var(--main-color);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.list-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.list-item video {
+  width: 100%;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.list-item video .playicon {
+  color: white;
+}
+
+.list-item .itemInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+}
+
+.list-item .itemInfo .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.list-item .itemInfo .icons .icon {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.list-item .itemInfo .itemInfoTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
+}
+
+.list-item .itemInfo .itemInfoTop .limit {
+  border: 1px solid gray;
+  padding: 1px 3px;
+  margin: 0 10px;
+}
+
+.list-item .itemInfo .description {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.list-item .itemInfo .genre {
+  font-size: 14px;
+  color: lightgray;
+}
+
+.list-item:hover {
+  width: 325px;
+  height: 300px;
+  border-radius: 5px;
+  position: absolute;
+  top: -150px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+}
+
+.list-item:hover img {
+  height: 140px;
+}
+/*# sourceMappingURL=ListItem.css.map */

@@ -1,0 +1,94 @@
+.newmovie {
+  position: absolute;
+  top: 75px;
+  left: 65px;
+  width: calc(100vw - 82px) !important;
+}
+
+.newmovie .productTitle {
+  font-size: 22px;
+}
+
+.newmovie .productForm {
+  margin-top: 10px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+}
+
+.newmovie .productForm .item {
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.newmovie .productForm .item label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.newmovie .productForm .item select,
+.newmovie .productForm .item input {
+  padding: 10px;
+  outline: none;
+}
+
+.newmovie .productForm .item .is-invalid-label {
+  color: red;
+}
+
+.newmovie .productForm .item .is-invalid {
+  border: 1px solid red;
+}
+
+.newmovie .productForm .createBtn {
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+@media (min-width: 900px) {
+  .newmovie {
+    left: 220px;
+    width: calc(100vw - 240px) !important;
+  }
+  .newmovie .productTitle {
+    font-size: 32px !important;
+  }
+  .newmovie .item {
+    width: 250px;
+  }
+  .newmovie .createBtn {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 493px) {
+  .newmovie .createBtn {
+    width: 200px !important;
+    margin: 0px 0px 20px 25px !important;
+  }
+}
+/*# sourceMappingURL=NewMovie.css.map */

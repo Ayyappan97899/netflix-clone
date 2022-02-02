@@ -1,0 +1,224 @@
+.movie {
+  position: absolute;
+  top: 75px;
+  left: 220px !important;
+  width: calc(100vw - 237px) !important;
+}
+
+.movie .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.movie .titleContainer .title {
+  font-size: 22px;
+}
+
+.movie .titleContainer .addBtn {
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: teal;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.movie .productTop .right {
+  margin: 24px 0px;
+  padding: 20px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.movie .productTop .right .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movie .productTop .right .top img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.movie .productTop .right .top .productName {
+  font-weight: 600;
+}
+
+.movie .productTop .right .bottom {
+  margin-top: 10px;
+}
+
+.movie .productTop .right .bottom .item {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.movie .productTop .right .bottom .item .key {
+  margin-right: 20px;
+}
+
+.movie .productTop .right .bottom .item .value {
+  font-weight: 300;
+}
+
+.movie .productBottom {
+  margin-bottom: 24px;
+  padding: 20px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.movie .productBottom .productForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.movie .productBottom .productForm .formleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.movie .productBottom .productForm .formleft label {
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.movie .productBottom .productForm .formleft input {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+.movie .productBottom .productForm .formleft select {
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.movie .productBottom .productForm .formleft .is-invalid-label {
+  color: red;
+}
+
+.movie .productBottom .productForm .formleft .is-invalid {
+  border-bottom: 1px solid red;
+}
+
+.movie .productBottom .productForm .formright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.movie .productBottom .productForm .formright .productUpload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movie .productBottom .productForm .formright .productUpload img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 20px;
+}
+
+.movie .productBottom .productForm .formright .productUpload .icon {
+  cursor: pointer;
+}
+
+.movie .productBottom .productForm .formright .productUpload .is-invalid-label {
+  color: red;
+}
+
+.movie .productBottom .productForm .formright .productUpload .is-invalid {
+  border-bottom: 1px solid red;
+}
+
+.movie .productBottom .productForm .formright .updateBtn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .movie .productUpload img {
+    width: 60px !important;
+    height: 60px !important;
+    margin-right: 10px !important;
+    border-radius: 50% !important;
+  }
+  .movie .formleft input {
+    width: 180px !important;
+  }
+}
+
+@media (max-width: 437px) {
+  .movie .productUpload img {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 10px !important;
+    border-radius: 50% !important;
+  }
+  .movie .formleft input {
+    width: 100px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .movie {
+    position: absolute;
+    top: 75px;
+    left: 65px !important;
+    width: calc(100vw - 82px) !important;
+  }
+  .movie .title {
+    font-size: 32px !important;
+  }
+}
+/*# sourceMappingURL=Movie.css.map */

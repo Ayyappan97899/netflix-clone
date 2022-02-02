@@ -1,0 +1,127 @@
+.newlist {
+  position: absolute;
+  top: 75px;
+  left: 65px;
+  width: calc(100vw - 82px) !important;
+}
+
+.newlist .productTitle {
+  font-size: 22px;
+}
+
+.newlist .productForm {
+  margin-top: 10px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+}
+
+.newlist .productForm .formleft .item {
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.newlist .productForm .formleft .item label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.newlist .productForm .formleft .item select,
+.newlist .productForm .formleft .item input {
+  padding: 10px;
+  outline: none;
+}
+
+.newlist .productForm .formleft .item .is-invalid-label {
+  color: red;
+}
+
+.newlist .productForm .formleft .item .is-invalid {
+  border: 1px solid red;
+}
+
+.newlist .productForm .formright .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  width: 400px;
+}
+
+.newlist .productForm .formright .item label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.newlist .productForm .formright .item .is-invalid-label {
+  color: red;
+}
+
+.newlist .productForm .formright .item .is-invalid {
+  border: 1px solid red;
+}
+
+.newlist .productForm .createBtn {
+  height: 30px;
+  width: 220px;
+  margin-left: 15px !important;
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (min-width: 900px) {
+  .newlist {
+    left: 220px;
+    width: calc(100vw - 240px) !important;
+  }
+  .newlist .productTitle {
+    font-size: 32px !important;
+  }
+  .newlist .item {
+    width: 250px;
+  }
+  .newlist .createBtn {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 150px !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .newlist .formright .item {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .newlist .formright .item {
+    width: 220px !important;
+  }
+}
+/*# sourceMappingURL=NewList.css.map */

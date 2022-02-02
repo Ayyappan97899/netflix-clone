@@ -1,0 +1,138 @@
+.sidebarlist {
+  position: fixed;
+  width: 200px;
+  top: 55px;
+  padding: 0px 20px 20px 20px;
+  height: calc(100vh - 65px);
+  background-color: rgb(251, 251, 255);
+  color: #555;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(20, 71, 122, 0.06);
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 10px;
+    height: 20px;
+    background-color: rgba(25, 118, 210, 0.1);
+  }
+
+  .sidebarmenu {
+    margin-bottom: 10px;
+    .dashtitle {
+      font-size: 14px;
+      font-weight: bold;
+      color: rgb(187, 186, 186);
+      margin-top: 20px;
+    }
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+      color: rgb(187, 186, 186);
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      .listItem {
+        width: 100%;
+        border-radius: 10px;
+        padding: 2px;
+        .listIcon {
+          margin-left: 5px;
+          .icon {
+            font-size: 20px;
+          }
+        }
+        .listText {
+          margin-left: -25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1980px) {
+  .sidebarlist {
+    padding: 0px 10px 10px 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidebarlist {
+    .dashtitle,
+    .title {
+      font-size: 13px !important;
+    }
+
+    .icon {
+      font-size: 19px !important;
+    }
+    .css-10hburv-MuiTypography-root {
+      font-size: 14px;
+    }
+    .listText {
+      margin-left: -30px !important;
+    }
+  }
+}
+
+@media (max-width: 903px) {
+  .sidebarlist {
+    .dashtitle,
+    .title {
+      font-size: 13px !important;
+    }
+
+    .icon {
+      font-size: 19px !important;
+    }
+    .css-10hburv-MuiTypography-root {
+      font-size: 14px;
+    }
+    .listText {
+      margin-left: -33px !important;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebarlist {
+    position: fixed;
+    top: 55px;
+    width: 43px;
+    padding: 10px;
+    height: 100vh;
+    .sidebarmenu {
+      margin-bottom: 0px !important;
+      .dashtitle,
+      .title {
+        display: none;
+      }
+      .css-h4y409-MuiList-root {
+        padding: 0px;
+      }
+      .listItem {
+        display: flex;
+        justify-content: center;
+        padding: 10px !important;
+        .listIcon {
+          margin: 0px !important;
+          min-width: 23px !important;
+          height: 23px !important;
+          .icon {
+            font-size: 23px !important;
+          }
+        }
+        .listText {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 883px) {
+}

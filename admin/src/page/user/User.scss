@@ -1,0 +1,245 @@
+.editUser {
+  position: absolute;
+  top: 75px;
+  left: 220px;
+  width: calc(100vw - 237px) !important;
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      font-size: 25px;
+    }
+    .userAddBtn {
+      width: 80px;
+      border: none;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: teal;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  .userContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    .userShow {
+      margin-bottom: 20px;
+      padding: 20px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      .userShowTop {
+        display: flex;
+        align-items: center;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .userShowTopDetails {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          .userShowTopName {
+            font-weight: 600;
+          }
+          .userShowTopTitle {
+            font-weight: 300;
+          }
+        }
+      }
+      .userShowBottom {
+        margin-top: 20px;
+        .userShowBottomTitle {
+          font-size: 14px;
+          font-weight: 600;
+          color: rgb(175, 170, 170);
+        }
+        .userShowInfo {
+          display: flex;
+          align-items: center;
+          margin: 20px 0px;
+          color: #444;
+          .icon {
+            font-size: 16px;
+          }
+          .userShowBottomDetails {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .userUpdate {
+      margin-bottom: 20px;
+      padding: 20px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      .userUpdateTitle {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .userUpdateForm {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .userUpdateLeft {
+        .userUpdateItem {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          label {
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+          input {
+            width: 250px;
+            border: none;
+            border-bottom: 1px solid lightgray;
+            height: 30px;
+            outline: none;
+          }
+          .is-invalid-label {
+            color: red;
+          }
+          .is-invalid {
+            border-bottom: 1px solid red;
+          }
+        }
+      }
+
+      .userUpdateRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .userUpdateUpload {
+          display: flex;
+          align-items: center;
+          img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+          }
+          .icon {
+            cursor: pointer;
+          }
+          .is-invalid-label {
+            color: red;
+          }
+        }
+        .userUpdateBtn {
+          border: none;
+          border-radius: 5px;
+          background-color: darkblue;
+          color: white;
+          padding: 5px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .editUser {
+    left: 63px;
+
+    width: calc(100vw - 80px) !important;
+  }
+}
+
+@media (max-width: 590px) {
+  .editUser {
+    .userUpdateUpload {
+      img {
+        width: 80px !important;
+        height: 80px !important;
+        object-fit: cover;
+        margin-right: 10px !important;
+      }
+    }
+    .userUpdateItem {
+      input {
+        width: 220px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 517px) {
+  .editUser {
+    .userUpdateUpload {
+      img {
+        width: 60px !important;
+        height: 60px !important;
+        object-fit: cover;
+        border-radius: 50% !important;
+      }
+    }
+    .userUpdateItem {
+      input {
+        width: 200px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .editUser {
+    .userUpdateUpload {
+      img {
+        width: 45px !important;
+        height: 45px !important;
+        object-fit: cover;
+        border-radius: 50% !important;
+      }
+    }
+    .userUpdateItem {
+      input {
+        width: 137px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .editUser {
+    .userUpdateItem {
+      input {
+        width: 110px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .editUser {
+    position: absolute;
+    top: 75px;
+    left: 220px;
+    width: calc(100vw - 220px) !important;
+    .titleContainer {
+      .title {
+        font-size: 32px;
+      }
+    }
+    .userContainer {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    .userUpdate {
+      margin-left: 20px;
+    }
+    .userShow {
+      margin-bottom: 0px !important;
+    }
+    .userUpdate {
+      margin-bottom: 0px !important;
+    }
+  }
+}

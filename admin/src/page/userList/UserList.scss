@@ -1,0 +1,45 @@
+.userlist {
+  .MuiDataGrid-root .MuiDataGrid-columnHeader:focus,
+  .MuiDataGrid-root .MuiDataGrid-cell:focus {
+    outline: none;
+  }
+  position: absolute;
+  top: 75px;
+  left: 65px;
+  width: calc(100vw - 65px) !important;
+  height: 87%;
+  .username {
+    display: flex;
+    align-items: center;
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+  }
+  .editBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .deleteBtn {
+    color: red;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 900px) {
+  .userlist {
+    position: absolute;
+    top: 75px;
+    left: 220px;
+    width: calc(100vw - 220px) !important;
+    height: 85%;
+  }
+}

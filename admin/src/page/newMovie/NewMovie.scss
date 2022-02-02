@@ -1,0 +1,78 @@
+.newmovie {
+  position: absolute;
+  top: 75px;
+  left: 65px;
+  width: calc(100vw - 82px) !important;
+  .productTitle {
+    font-size: 22px;
+  }
+  .productForm {
+    margin-top: 10px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+
+    .item {
+      width: 220px;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      margin-bottom: 10px;
+      label {
+        color: gray;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      select,
+      input {
+        padding: 10px;
+        outline: none;
+      }
+      .is-invalid-label {
+        color: red;
+      }
+      .is-invalid {
+        border: 1px solid red;
+      }
+    }
+    .createBtn {
+      height: 30px;
+      width: 100px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      padding: 7px 10px;
+      border: none;
+      border-radius: 10px;
+      background-color: darkblue;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      align-self: center;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .newmovie {
+    left: 220px;
+    width: calc(100vw - 240px) !important;
+    .productTitle {
+      font-size: 32px !important;
+    }
+    .item {
+      width: 250px;
+    }
+    .createBtn {
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+@media (max-width: 493px) {
+  .newmovie {
+    .createBtn {
+      width: 200px !important;
+      margin: 0px 0px 20px 25px !important;
+    }
+  }
+}

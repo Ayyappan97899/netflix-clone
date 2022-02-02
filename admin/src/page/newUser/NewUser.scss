@@ -1,0 +1,109 @@
+.newUser {
+  position: absolute;
+  top: 75px;
+  left: 65px;
+  width: calc(100vw - 82px) !important;
+  .newUserTitle {
+    font-size: 25px;
+  }
+  .newUserForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    .createBtn {
+      width: 200px;
+      background-color: darkblue;
+      border: none;
+      color: white;
+      padding: 7px 10px;
+      border-radius: 10px;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .newUserItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: rgb(151, 150, 150);
+    }
+    .is-invalid-label {
+      color: red;
+    }
+    .is-invalid {
+      border: 1px solid red;
+    }
+    input {
+      height: 20px;
+      padding: 10px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      outline: none;
+    }
+    select {
+      height: 40px;
+      border-radius: 5px;
+      outline: none;
+    }
+    .newUserGender {
+      display: flex;
+      align-items: center;
+      input {
+        margin-top: 0px;
+      }
+      label {
+        margin: 10px;
+        font-size: 18px;
+        color: #555;
+      }
+      .is-invalid-label {
+        color: red;
+      }
+      .is-invalid {
+        border: 1px solid red;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .newUser {
+    position: absolute;
+    top: 75px;
+    left: 220px;
+    width: calc(100vw - 220px) !important;
+    height: 85%;
+    .newUserTitle {
+      font-size: 32px !important;
+    }
+    .newUserForm {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .newUserItem {
+      width: 95%;
+    }
+    .createBtn {
+      width: 200px !important;
+    }
+  }
+}
+
+@media (max-width: 373px) {
+  .newUser {
+    .newUserItem {
+      width: 95%;
+    }
+    .createBtn {
+      width: 245px !important;
+    }
+  }
+}
